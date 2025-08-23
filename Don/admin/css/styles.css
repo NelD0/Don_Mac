@@ -1,0 +1,176 @@
+/* Ensuring the full page height and no gaps */
+body, html {
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+    background: linear-gradient(135deg, #1b1b41, #0a1f44);
+    color: white;
+}
+
+/* Header style */
+.header {
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(135deg, rgb(9, 9, 37), rgb(19, 31, 54));
+    padding: 8px 6px;
+    position: relative;
+}
+
+/* Logo style */
+.header h2 {
+    margin-right: 69%;
+}
+
+.logo {
+    margin-left: 12%;
+    background: white;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    position: relative;
+    overflow: hidden;
+}
+
+.logo > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Main container to fill available space */
+.dashboard-container {
+    display: flex;
+    height: 100vh;
+    overflow: hidden; /* Prevents scrolling overflow */
+}
+
+/* Sidebar style */
+.sidebar {
+    width: 15%;
+    background: linear-gradient(135deg, #0a1f44, #1f3b73);
+    color: white;
+    padding: 15px;
+    height: 100vh; /* Ensures sidebar stretches full height */
+    box-sizing: border-box;
+}
+
+.sidebar h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    background: linear-gradient(135deg, #1f3b73, #2979ff);
+    border-radius: 5px;
+    text-align: center;
+}
+
+.sidebar ul li a:hover {
+    background: linear-gradient(135deg, #2979ff, #1f3b73);
+}
+
+/* Main content area */
+.main-content {
+    flex: 2;
+    padding: 10px;
+    background: linear-gradient(135deg, rgb(19, 31, 54), rgb(4, 21, 49));
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh; /* Ensures full screen height for content */
+    overflow-y: auto; /* Allows content to scroll if necessary */
+}
+
+/* Stats container */
+.stats-container {
+    display: flex;
+    gap: 30px;
+}
+
+.stats-box {
+    background: linear-gradient(135deg, #222, #333);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    width: 300px;
+}
+
+.stats-box h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #1abc9c;
+}
+
+.stats-box p {
+    font-size: 28px;
+    margin: 10px 0 0;
+    font-weight: bold;
+}
+
+/* Table styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: linear-gradient(135deg, #222, #333);
+    color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 4px solid #444;
+}
+
+th {
+    background: #333;
+}
+
+tr:hover {
+    background: #444;
+}
+
+/* Delete button styling */
+.delete-button {
+    background: #e74c3c;
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+}
+
+.delete-button:hover {
+    background: #c0392b;
+}
+
+/* Charts container styling */
+.charts-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+canvas {
+    max-width: 100%;
+    height: auto;
+    background: white;
+    padding: 10px;
+    border-radius: 8px;
+}

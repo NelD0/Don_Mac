@@ -1,0 +1,148 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    padding: 0%;
+    margin: 0%;
+    background: linear-gradient(135deg, rgba(20, 20, 50, 0.9), rgba(0, 0, 30, 0.9)), url('admin/img/images.png') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    height: 100vh !important;
+}
+
+*, *::before, *::after {
+    color: white;
+}
+
+input, select, textarea {
+    color: white !important;
+    background-color: rgba(0, 0, 50, 0.6);
+    border: 1px solid #ccc;
+}
+
+input.quantity {
+    padding: 5px;
+    border-radius: 5px;
+    width: 60px;
+}
+
+.container {
+    background: rgba(0, 0, 50, 0.8);
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+header {
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.menu h2 {
+    font-size: 45px;
+    font-weight: bold;
+}
+
+.menu-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    background: rgba(30, 30, 70, 0.8);
+    border-bottom: 2px solid #444;
+    border-radius: 5px;
+    margin: 10px auto;
+    width: 60%;
+    font-size: 22px;
+}
+
+.menu-item button {
+    background: #007bff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.menu-item button:hover {
+    background: #0056b3;
+}
+
+.cart h2 {
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid #444;
+    border-radius: 5px;
+    margin: 10px auto;
+    width: 50%;
+}
+
+.remove-btn {
+    background: #dc3545;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.remove-btn:hover {
+    background: #c82333;
+}
+
+.checkout-btn {
+    background: #0069d9;
+    border: none;
+    padding: 15px 30px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+.checkout-btn:hover {
+    background: #0056b3;
+}
+
+.checkout ul {
+    font-size: 25px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    margin: auto;
+    width: 50%;
+    padding: 15px 0;
+    border-bottom: 1px solid #444;
+}
+
+a:hover, button:hover {
+    transition: background-color 0.3s ease-in-out;
+}
+
+button:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.8);
+}
